@@ -108,7 +108,18 @@ class Solution(object):
         # ============ DEFAULT IMPLEMENTATION ============
         # TODO: Implement ở đây
         # Viết code ở đây
-
+class Solution(object):
+  def isFibonacci(self, n):
+    a, b = 0, 1
+    if n == 0:
+      return True
+    while b < n:
+      c = a
+      a = b
+      b += c
+    if n == b:
+      return True
+    return False  
 
 
 # Test function để demo và giải thích

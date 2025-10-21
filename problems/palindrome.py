@@ -100,6 +100,12 @@ class Solution(object):
         # Hiện tại dùng cách 1 (String Slicing) làm mặc định:
         # TODO: Implement ở đây
         # Viết code ở đây
+class Solution(object):
+    def isPalindrome(self, x):
+        result = str(x)
+        return result[::-1] == result
+    
+
 
 
 

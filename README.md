@@ -34,7 +34,6 @@ Repository này chứa các bài tập Data Structures & Algorithms (DSA) dành 
 python main.py
 
 # Chạy test cho bài cụ thể
-python main.py --problem palindrome
 python main.py --problem fibonacci
 python main.py --problem triangles
 
