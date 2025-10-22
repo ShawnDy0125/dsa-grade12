@@ -35,14 +35,16 @@ class Solution(object):
         # TODO: Em hãy implement thuật toán ở đây
         # Gợi ý: Dùng vòng lặp for từ 1 đến n+1, mỗi lần append i ký tự '*'
         # Viết code ở đây
-
-    
-    def printRightTriangleString(self, n):
-        """
-        Trả về tam giác dưới dạng string với newline
-        """
-        lines = self.printRightTriangle(n)
-        return '\n'.join(lines)
+class Solution(object):
+    def printRightTriangle(self, n):
+        a = '*'
+        result = []
+        for i in range(1, n+1):
+            result.append(a*i)
+        return result
+             
+        
+            
 
 
 # Test riêng cho bài này
