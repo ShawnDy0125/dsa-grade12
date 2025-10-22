@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Python cache files (ensure all cache is ignored)
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
 # C extensions
 *.so
 
@@ -263,3 +269,9 @@ tmp/
 # System files
 .DS_Store
 Thumbs.db
+
+# Custom files to ignore (add specific files here)
+# Uncomment và thêm tên file bạn muốn ignore:
+# filename.txt
+# folder_name/
+# *.extension
