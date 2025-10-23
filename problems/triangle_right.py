@@ -40,6 +40,7 @@ class Solution(object):
         a = '*'
         result = []
         for i in range(1, n+1):
+            print( a*i)
             result.append(a*i)
         return result
              
