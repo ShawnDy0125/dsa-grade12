@@ -47,6 +47,15 @@ class Solution(object):
         # - Số stars = 2 * i - 1
         # - Kết hợp: ' ' * spaces + '*' * stars
         # Viết code ở đây
+class Solution(object):
+    def printIsoscelesTriangle(self,n):
+        result = [ ]
+        for i in range(1, n + 1):
+            blank = n - i 
+            star = 2 * i - 1
+            print(" " * blank +"*" * star)
+            result.append(" " * blank + "*" * star)
+        return result
         
     
     def printIsoscelesTriangleString(self, n):
