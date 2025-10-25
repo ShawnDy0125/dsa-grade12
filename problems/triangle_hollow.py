@@ -44,6 +44,24 @@ class Solution(object):
         # - Dòng cuối: spaces + toàn '*'
         # - Dòng giữa: spaces + '*' + spaces + '*'
         # Viết code ở đây
+class Solution(object):
+    def printHollowTriangle(self, n):
+        result = []
+        for i in range(1, n + 1):
+            blank = n - i 
+            space = 2 * i - 3
+            if i == 1:
+                print(" " * blank + "*")
+                result.append(" " * blank + "*")
+            if i < n and i > 1:
+                print(" " * blank + "*" + " " * space + "*")
+                result.append(" " * blank + "*" + " " * space + "*")
+            if i == n:
+                side = (2 * n - 1)
+                print("*" * side)
+                result.append("*" * side)
+        return result 
+
 
     
     def printHollowTriangleString(self, n):
